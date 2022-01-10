@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main()
+{ 	   
+	int no, teams, left;
+	printf("Number of students:\n");
+	scanf("%d", &no);
+	printf("Number of teams:\n");
+	scanf("%d", &teams);
+	//No of students in each group is 7
+	left = no % teams;			//left = no-(teams*7);
+	printf("The number of students in each team is %d and left out is %d", (no/teams), left);
+	
+return 0;
+}
